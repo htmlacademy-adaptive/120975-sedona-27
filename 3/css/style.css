@@ -1,0 +1,355 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
+  font-display: swap;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.button {
+  background-color: #81b3d2;
+  border: none;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.button--wide {
+  width: 458px;
+}
+.page {
+  height: 100%;
+}
+.page__body {
+  margin: 0;
+  min-height: 100%;
+  display: flex;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #e7e5e5;
+}
+.page__wrapper {
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+}
+.main-header {
+  display: flex;
+}
+.main-header__logo-image {
+  vertical-align: bottom;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.site-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+}
+.site-list__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000000;
+  padding: 20px;
+}
+.site-list__link--current {
+  color: #766357;
+}
+.main-container {
+  flex-grow: 1;
+}
+.hero {
+  background-image: url("../img/jpeg/mountains.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #2d1468;
+  padding: 78px 0 90px;
+  text-align: center;
+  position: relative;
+}
+.hero--second {
+  padding: 101px 0 120px;
+  background-position: bottom;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 1200px;
+  height: 57px;
+  background-image: url("../../img/svg/hero-triangle.svg");
+}
+.hero__logo {
+  vertical-align: bottom;
+}
+.intro {
+  padding: 59px 0 44px;
+}
+.intro__container {
+  width: 484px;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+.intro__title {
+  line-height: 26px;
+  font-size: 21px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.intro__text {
+  margin: 0;
+}
+.advantages__list {
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  color: #000000;
+}
+.advantages__service-list {
+  list-style-type: none;
+  display: flex;
+  padding-left: 0;
+}
+.advantages__container {
+  display: flex;
+  margin: 0;
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+.advantages__container--reverse {
+  flex-direction: row-reverse;
+}
+.advantages__item {
+  padding: 52px 50px 51px;
+  width: 400px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  text-align: center;
+}
+.advantages__item--place {
+  color: #000000;
+  background-color: #eeeeee;
+}
+.advantages__title {
+  font-size: 21px;
+  line-height: 26px;
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+.advantages__description {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+.advantages__description:last-child {
+  margin-bottom: 0;
+}
+.advantages__picture {
+  vertical-align: bottom;
+}
+.hotel-search {
+  padding: 61px 0 66px;
+  text-align: center;
+}
+.hotel-search__container {
+  margin: 0 auto;
+}
+.hotel-search__title {
+  font-size: 30px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.hotel-search__text {
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 45px;
+}
+.main-footer__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 36px 0;
+}
+.main-footer__hashtag {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+.social {
+  display: flex;
+}
+.copyright {
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.review {
+  padding-top: 115px;
+  padding-bottom: 67px;
+}
+.review__container {
+  width: 436px;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+.review__title {
+  font-size: 30px;
+  line-height: 26px;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+.review__text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.gallery__list {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card__link {
+  text-decoration: none;
+}
+.card__title {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+.card__author {
+  color: #333333;
+}
+.card__results {
+  font-weight: 700;
+}
+.video {
+  padding-top: 62px;
+  padding-bottom: 120px;
+  display: flex;
+}
+.video__container {
+  margin: 0 auto;
+  text-align: center;
+}
+.video__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+.video__discription {
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.feedback {
+  padding-bottom: 64px;
+}
+.feedback__container {
+  width: 960px;
+  margin: 0 auto;
+}
+.feedback-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.feedback-form__fields {
+  flex-grow: 1;
+  margin: 0;
+}
+.feedback-form__about {
+  flex-basis: 100%;
+  margin: 0;
+}
+.feedback-form__fields-list {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+.feedback-form__variants-list {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+.feedback-form__title {
+  color: #000000;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.feedback-form__field-label {
+  text-transform: uppercase;
+}
+.feedback-form__field {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  background-color: #f2f2f2;
+  border: none;
+}
+.feedback-form__field::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+.feedback-form__variant-label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+.feedback-form__comment-field {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  background-color: #f2f2f2;
+}
+.feedback-form__comment-field::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+.feedback-form__rule {
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=style.css.map */
