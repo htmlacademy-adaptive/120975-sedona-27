@@ -1,9 +1,14 @@
 .main-footer__container {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  padding: 29px 82px;
 
-  padding: 36px 0;
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    padding: 36px 82px;
+  }
 }
 
 .main-footer__hashtag {

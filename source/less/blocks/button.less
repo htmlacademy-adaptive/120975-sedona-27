@@ -1,20 +1,28 @@
 .button {
-  background-color: #81b3d2;
-  border: none;
-
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
+  font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
-  text-decoration: none;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  background-color: @basic-back;
+  color: @additional-color-text;
+  line-height: 26px;
+  font-size: 21px;
+  font-weight: 700;
+  border: none;
+  text-align: center;
+  cursor: pointer;
 
-  display: inline-block;
-  box-sizing: border-box;
-}
+  padding-top: 18px;
+  padding-bottom: 14px;
 
-.button--wide {
-  width: 458px;
+  &--search {
+    width: 284px;
+    display: inline-block;
+
+    text-decoration: none;
+
+    @media (min-width: @tablet-width) {
+      width: 458px;
+      padding-top: 14px;
+      padding-bottom: 17px;
+    }
+  }
 }

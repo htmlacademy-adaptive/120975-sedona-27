@@ -1,8 +1,16 @@
 .video {
-  padding-top: 62px;
-  padding-bottom: 120px;
-
   display: flex;
+  padding-top: 17px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 58px;
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 62px;
+    padding-bottom: 84px;
+  }
 }
 
 .video__container {
@@ -13,17 +21,34 @@
 
 .video__title {
   font-weight: 700;
-  font-size: 30px;
+  font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
 
   margin-top: 0;
   margin-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .video__discription {
   text-transform: uppercase;
 
   margin-top: 0;
-  margin-bottom: 0;
+  margin-right: 28px;
+  margin-bottom: 38px;
+  margin-left: 28px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 161px;
+    margin-bottom: 66px;
+    margin-left: 161px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 377px;
+    margin-left: 377px;
+  }
 }
