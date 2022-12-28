@@ -100,7 +100,12 @@
   }*/
 }
 
-
 .advantages__picture {
-  vertical-align: bottom;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+
+  @media (min-width: @tablet-width) {
+    height: 256px;
+  }
 }
