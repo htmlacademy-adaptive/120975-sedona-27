@@ -1,0 +1,35 @@
+.card {
+  padding-bottom: 25px;
+}
+
+.card__link {
+  text-decoration: none;
+}
+
+.card__photo {
+  width: 100%;
+  object-fit: cover;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    height: 267px;
+
+    &--main {
+      height: 400px;
+    }
+  }
+}
+
+.card__title {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.card__author {
+  color: #333333;
+}
+
+.card__results {
+  font-weight: 700;
+}

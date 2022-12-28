@@ -1,23 +1,38 @@
 .intro {
-  padding: 59px 0 44px;
+  padding: 32px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 47px 20px 55px;
+  }
 }
 
 .intro__container {
-  width: 484px;
+  width: 272px;
   margin: 0 auto;
 
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    width: 510px;
+  }
 }
 
 .intro__title {
   line-height: 26px;
-  font-size: 21px;
+  font-size: 18px;
 
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .intro__text {
+  line-height: 21px;
+  font-size: 14px;
+
   margin: 0;
 }
