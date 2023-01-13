@@ -1,3 +1,41 @@
 .social {
+  list-style-type: none;
   display: flex;
+  padding-left: 0;
+}
+
+.social__item {
+  width: 48px;
+  height: 48px;
+  background-color: @basic-back;
+
+  &:not(:last-child) {
+    margin-right: 6px;
+  }
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+}
+
+.social__link {
+  display: block;
+  text-align: center;
+  padding: 12px;
+
+  &--vk {
+    padding: 15px 12px;
+  }
+
+  &--youtube {
+    padding: 15px;
+  }
+}
+
+.social__link:active svg {
+  opacity: 0.3;
 }

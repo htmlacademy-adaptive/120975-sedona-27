@@ -10,12 +10,32 @@
   text-align: center;
   cursor: pointer;
 
+  display: inline-block;
+  box-sizing: border-box;
   padding-top: 18px;
+  padding-right: 30px;
   padding-bottom: 14px;
+  padding-left: 30px;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
+
+  &--disabled {
+    background-color: #e5e5e5;
+  }
 
   &--search {
     width: 284px;
-    display: inline-block;
 
     text-decoration: none;
 

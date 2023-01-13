@@ -1,13 +1,17 @@
 .main-footer__container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 29px 82px;
+  padding: 29px 82px 23px;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
-    padding: 36px 82px;
+    padding: 36px 76px 36px 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 36px 136px 36px 104px;
   }
 }
 
@@ -18,4 +22,24 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+
+  &:hover {
+    color: @basic-back;
+  }
+
+  &:active {
+    color: rgba(@basic-text, 0.3);
+  }
+
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 33px;
+  }
+}
+
+.main-footer__social {
+  margin: 0;
+
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 40px;
+  }
 }

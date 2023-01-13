@@ -1,6 +1,4 @@
 .gallery {
-  padding: 25px 20px;
-
   @media (min-width: @tablet-width) {
     padding: 0 60px;
   }
@@ -25,9 +23,11 @@
     grid-auto-rows: auto;
     margin: 0;
   }
+}
 
-  .gallery__item:first-child {
-    @media (min-width: @tablet-width) {
+.gallery__item {
+  @media (min-width: @tablet-width) {
+    &:first-child {
       grid-column: 1 / -1;
     }
   }
