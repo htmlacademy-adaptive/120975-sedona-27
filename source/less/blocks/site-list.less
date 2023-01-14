@@ -2,19 +2,56 @@
   list-style-type: none;
   background-color: @basic-back;
 
+  position: relative;
   padding-left: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
 
+  @media (max-width: @mobile-width-only) {
+    position: absolute;
+    width: 100%;
+  }
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
+
     background-color: @additional-color-text;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+    background-repeat: no-repeat;
+    height: 7px;
+    width: 100%;
+    bottom: 0;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
   }
 }
 
 .site-list__item {
+  &:first-child .site-list__link {
+    box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2);
+
+    @media (min-width: @tablet-width) {
+      box-shadow: none;
+    }
+  }
+
+  &:last-child .site-list__link {
+    box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.2);
+
+    @media (min-width: @tablet-width) {
+      box-shadow: none;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     width: 153px;
   }
@@ -22,9 +59,16 @@
   @media (min-width: @desktop-width) {
     width: 240px;
   }
+
+  @media (max-width: @mobile-width-only) {
+    &--logo {
+      display: none;
+    }
+  }
 }
 
 .site-list__link {
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 2px 0 rgba(255, 255, 255, 0.2);
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
@@ -32,16 +76,37 @@
   line-height: 26px;
   color: @additional-color-text;
 
+  text-align: center;
   display: block;
   padding: 17px 83px 12px 81px;
+
+  @media (max-width: @mobile-width-only) {
+    &:not(.site-list__link--current):hover {
+      background-color: #669ec0;
+    }
+
+    &:not(.site-list__link--current):active {
+      background-color: #5496bd;
+      color: rgba(@additional-color-text, 0.3);
+    }
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 14px;
     line-height: 21px;
     color: @basic-text;
-    text-align: center;
+    background-color: @additional-color-text;
+    box-shadow: none;
 
     padding: 18px 0 17px;
+
+    &:not(.site-list__link--current):hover {
+      color: @basic-back;
+    }
+
+    &:not(.site-list__link--current):active {
+      color: rgba(@basic-text, 0.3);
+    }
   }
 }
 

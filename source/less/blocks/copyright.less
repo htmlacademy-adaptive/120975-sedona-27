@@ -1,5 +1,20 @@
 .copyright {
-  color: #000000;
+  color: @basic-text;
   text-transform: uppercase;
   text-decoration: none;
+
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    color: @basic-back;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
+}
+
+.copyright__text {
+  margin-right: 12px;
 }

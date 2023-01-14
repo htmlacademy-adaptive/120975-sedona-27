@@ -1,18 +1,32 @@
 .card {
-  padding-bottom: 25px;
+  position: relative;
+
+  @media (max-width: @mobile-width-only) {
+    padding: 24px 20px 25px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  &:first-child {
+    @media (max-width: @mobile-width-only) {
+      border-top: 1px solid #e5e5e5;
+    }
+  }
 }
 
 .card__link {
   text-decoration: none;
+  color: inherit;
 }
 
 .card__photo {
   width: 100%;
   object-fit: cover;
+  display: block;
+  margin-bottom: 15px;
 
   @media (min-width: @tablet-width) {
-    display: block;
     height: 267px;
+    margin-bottom: 0;
 
     &--main {
       height: 400px;
@@ -20,16 +34,81 @@
   }
 }
 
+.card__info-container {
+  width: 100%;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 20px 15px;
+
+    background-color: @inputs-color;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    bottom: 0;
+
+    color: @additional-color-text;
+    background-color: rgba(@basic-text, 0.3);
+  }
+}
+
 .card__title {
   font-weight: 700;
   text-transform: uppercase;
-  color: #000000;
+  font-size: 14px;
+
+  margin-top: 0;
+  margin-bottom: 1px;
 }
 
 .card__author {
-  color: #333333;
+  color: @secondary-text;
+
+  margin-top: 0;
+  margin-bottom: 11px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: inherit;
+  }
+}
+
+.card__like-container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.card__button {
+  padding: 0;
+  margin-right: 14px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.card__button-icon {
+  opacity: 0.3;
+
+  @media (min-width: @desktop-width) {
+    opacity: 1;
+    color: @additional-color-text;
+  }
 }
 
 .card__results {
+  margin: 0;
+
   font-weight: 700;
+  line-height: 17px;
+
+  @media (min-width: @tablet-width) {
+    line-height: 19px;
+  }
 }

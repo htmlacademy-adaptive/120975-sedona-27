@@ -1,12 +1,23 @@
 .feedback {
-  padding: 24px 20px;
+  padding-top: 0;
+  padding-right: 20px;
+  padding-bottom: 24px;
+  padding-left: 20px;
+
+  @media (max-width: @mobile-width-only) {
+    border-top: 1px solid #e5e5e5;
+  }
 
   @media (min-width: @tablet-width) {
-    padding: 24px 60px;
+    padding-top: 35px;
+    padding-right: 60px;
+    padding-bottom: 64px;
+    padding-left: 60px;
   }
-}
 
-.feedback__container {
-  /*width: 280px;
-  margin: 0 auto;*/
+  @media (min-width: @desktop-width) {
+    padding-top: 0;
+    padding-right: 120px;
+    padding-left: 120px;
+  }
 }

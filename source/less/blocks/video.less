@@ -1,6 +1,7 @@
 .video {
-  display: flex;
   padding-top: 17px;
+  padding-right: 28px;
+  padding-left: 28px;
 
   @media (min-width: @tablet-width) {
     padding-top: 58px;
@@ -15,8 +16,9 @@
 
 .video__container {
   margin: 0 auto;
-
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .video__title {
@@ -26,7 +28,7 @@
   text-transform: uppercase;
 
   margin-top: 0;
-  margin-bottom: 32px;
+  margin-bottom: 27px;
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
@@ -35,20 +37,33 @@
 
 .video__discription {
   text-transform: uppercase;
+  text-align: center;
 
   margin-top: 0;
-  margin-right: 28px;
   margin-bottom: 38px;
-  margin-left: 28px;
 
   @media (min-width: @tablet-width) {
-    margin-right: 161px;
+    width: 445px;
+    margin-right: auto;
     margin-bottom: 66px;
-    margin-left: 161px;
+    margin-left: auto;
   }
 
   @media (min-width: @desktop-width) {
     margin-right: 377px;
     margin-left: 377px;
+  }
+}
+
+.video__photo {
+  vertical-align: bottom;
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    height: 500px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
   }
 }

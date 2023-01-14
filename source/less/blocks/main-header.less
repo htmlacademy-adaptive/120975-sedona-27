@@ -8,11 +8,22 @@
 }
 
 .main-header__logo {
+  margin-right: 68px;
+  margin-left: 67px;
   position: absolute;
-  height: 96px;
-  z-index: 1;
+  z-index: 3;
+  left: 0;
+
+  @media (min-width: @tablet-width) {
+    z-index: 5;
+    left: 224px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 439px;
+  }
 }
 
 .main-header__logo-image {
-  vertical-align: bottom;
+  display: block;
 }

@@ -33,6 +33,12 @@
   margin-top: 0;
   margin-bottom: 32px;
 
+  @media (max-width: @mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     margin-bottom: 40px;
   }
