@@ -1,0 +1,107 @@
+.variants-list {
+  margin: 0;
+  padding-left: 0;
+
+  list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 280px 280px;
+    gap: 16px;
+
+    &--sights {
+      grid-template-columns: 224px 224px;
+      gap: 32px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    padding: 17px 53px;
+
+    &--sights {
+      gap: 64px;
+      padding: 32px 44px;
+    }
+  }
+}
+
+.variants-list__item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @media (max-width: @mobile-width-only) {
+    &:not(:last-child) {
+      margin-bottom: 36px;
+    }
+  }
+}
+
+.variants-list__label {
+  display: block;
+  position: relative;
+  padding-left: 62px;
+}
+
+.variants-list__radio,
+.variants-list__checkbox {
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 46px;
+  height: 46px;
+
+  background-color: #f2f2f2;
+}
+
+.variants-list__radio {
+  border-radius: 50%;
+}
+
+.variants-list__checkbox {
+  border-radius: 4px;
+}
+
+.variants-list__control-input[type="radio"]:checked + .variants-list__radio::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 15px;
+  left: 15px;
+
+  background-color: @secondary-text;
+  border-radius: 50%;
+}
+
+.variants-list__control-input[type="checkbox"]:checked + .variants-list__checkbox {
+  background-image: url("../../img/svg/checkmark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.variants-list__label:hover .variants-list__radio,
+.variants-list__label:hover .variants-list__checkbox {
+  background-color: #e5e5e5;
+}
+
+.variants-list__label:active .variants-list__radio,
+.variants-list__label:active .variants-list__checkbox {
+  background-color: #d5d5d5;
+}
+
+.variants-list__label:active .variants-list__control-input[type="radio"]:checked + .variants-list__radio::before {
+  background-color: rgba(51, 51, 51, 0.3);
+}
+
+.variants-list__label:active .variants-list__control-input[type="checkbox"]:checked + .variants-list__checkbox {
+  background-image: url("../../img/svg/checkmark-active.svg");
+}
+
+.variants-list__text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}

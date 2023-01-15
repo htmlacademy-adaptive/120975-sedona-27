@@ -230,14 +230,14 @@
   margin-top: 0;
   margin-bottom: 14px;
 
-  @media (max-width: @mobile-width-only) {
-    br {
-      display: none;
-    }
-  }
-
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+.advantages__description br {
+  @media (max-width: @mobile-width-only) {
+    display: none;
   }
 }
 
