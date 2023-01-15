@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Каталог</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <div class="page__wrapper">
@@ -69,7 +73,11 @@
             <ul class="gallery__list">
               <li class="gallery__item card">
                 <a class="card__link" href="#">
-                  <img class="card__photo card__photo--main" src="img/jpeg/gallery-photo-1-mobile.jpg" width="280" height="280" alt="Неродные просторы.">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/jpeg/gallery-photo-1-desktop.jpg 1x, img/jpeg/gallery-photo-1-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/jpeg/gallery-photo-1-tablet.jpg 1x, img/jpeg/gallery-photo-1-tablet@2x.jpg 2x">
+                    <img class="card__photo card__photo--main" src="img/jpeg/gallery-photo-1-mobile.jpg" srcset="img/jpeg/gallery-photo-1-mobile@2x.jpg" width="280" height="280" alt="Неродные просторы.">
+                  </picture>
                 </a>
                 <div class="card__info-container">
                   <div class="card__title-container">
@@ -91,7 +99,11 @@
               </li>
               <li class="gallery__item card">
                 <a class="card__link" href="#">
-                  <img class="card__photo" src="img/jpeg/gallery-photo-2-mobile.jpg" width="280" height="280" alt="Местная растительность.">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/jpeg/gallery-photo-2-desktop.jpg 1x, img/jpeg/gallery-photo-2-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/jpeg/gallery-photo-2-tablet.jpg 1x, img/jpeg/gallery-photo-2-tablet@2x.jpg 2x">
+                    <img class="card__photo" src="img/jpeg/gallery-photo-2-mobile.jpg" srcset="img/jpeg/gallery-photo-2-mobile@2x.jpg" width="280" height="280" alt="Неродные просторы.">
+                  </picture>
                 </a>
                 <div class="card__info-container">
                   <div class="card__title-container">
@@ -113,7 +125,11 @@
               </li>
               <li class="gallery__item card">
                 <a class="card__link" href="#">
-                  <img class="card__photo" src="img/jpeg/gallery-photo-3-mobile.jpg" width="280" height="280" alt="Дорога на север.">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/jpeg/gallery-photo-3-desktop.jpg 1x, img/jpeg/gallery-photo-3-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/jpeg/gallery-photo-3-tablet.jpg 1x, img/jpeg/gallery-photo-3-tablet@2x.jpg 2x">
+                    <img class="card__photo" src="img/jpeg/gallery-photo-3-mobile.jpg" srcset="img/jpeg/gallery-photo-3-mobile@2x.jpg" width="280" height="280" alt="Неродные просторы.">
+                  </picture>
                 </a>
                 <div class="card__info-container">
                   <div class="card__title-container">
@@ -135,7 +151,11 @@
               </li>
               <li class="gallery__item card">
                 <a class="card__link" href="#">
-                  <img class="card__photo" src="img/jpeg/gallery-photo-4-mobile.jpg" width="280" height="280" alt="Мост дьявола.">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/jpeg/gallery-photo-4-desktop.jpg 1x, img/jpeg/gallery-photo-4-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/jpeg/gallery-photo-4-tablet.jpg 1x, img/jpeg/gallery-photo-4-tablet@2x.jpg 2x">
+                    <img class="card__photo" src="img/jpeg/gallery-photo-4-mobile.jpg" srcset="img/jpeg/gallery-photo-4-mobile@2x.jpg" width="280" height="280" alt="Неродные просторы.">
+                  </picture>
                 </a>
                 <div class="card__info-container">
                   <div class="card__title-container">
