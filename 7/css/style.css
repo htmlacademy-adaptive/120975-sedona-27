@@ -352,7 +352,7 @@
 }
 @media (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../../img/jpeg/mountains-mobile@2x.jpg");
+    background-image: url("../img/jpeg/mountains-mobile@2x.jpg");
   }
 }
 @media (min-width: 768px) {
@@ -364,7 +364,7 @@
 }
 @media (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../../img/jpeg/mountains@2x.jpg");
+    background-image: url("../img/jpeg/mountains@2x.jpg");
   }
 }
 .hero--second {
