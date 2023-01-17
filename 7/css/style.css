@@ -609,7 +609,7 @@
   }
 }
 .advantages__item--home::before {
-  background-image: url("../../img/svg/icon-house.svg");
+  background-image: url("../img/svg/icon-house.svg");
 }
 @media (min-width: 768px) {
   .advantages__item--home::before {
@@ -624,7 +624,7 @@
   }
 }
 .advantages__item--food::before {
-  background-image: url("../../img/svg/icon-burger.svg");
+  background-image: url("../img/svg/icon-burger.svg");
 }
 @media (min-width: 768px) {
   .advantages__item--food::before {
@@ -639,7 +639,7 @@
   }
 }
 .advantages__item--gift::before {
-  background-image: url("../../img/svg/icon-gift.svg");
+  background-image: url("../img/svg/icon-gift.svg");
 }
 @media (min-width: 768px) {
   .advantages__item--gift::before {
@@ -1233,10 +1233,10 @@
   height: 58px;
 }
 .feedback-form__fields-item--tel::after {
-  background-image: url("../../img/svg/phone-icon.svg");
+  background-image: url("../img/svg/phone-icon.svg");
 }
 .feedback-form__fields-item--mail::after {
-  background-image: url("../../img/svg/email-icon.svg");
+  background-image: url("../img/svg/email-icon.svg");
 }
 .feedback-form__title {
   color: #000000;
@@ -1437,7 +1437,7 @@
   border-radius: 50%;
 }
 .variants-list__control-input[type="checkbox"]:checked + .variants-list__checkbox {
-  background-image: url("../../img/svg/checkmark.svg");
+  background-image: url("../img/svg/checkmark.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1453,7 +1453,7 @@
   background-color: rgba(51, 51, 51, 0.3);
 }
 .variants-list__label:active .variants-list__control-input[type="checkbox"]:checked + .variants-list__checkbox {
-  background-image: url("../../img/svg/checkmark-active.svg");
+  background-image: url("../img/svg/checkmark-active.svg");
 }
 .variants-list__text {
   font-weight: 700;
@@ -1471,7 +1471,7 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 .modal-container--error {
-  /*display: none;*/
+  display: none;
 }
 .modal-container--success {
   display: none;
@@ -1499,6 +1499,7 @@
   line-height: 26px;
   font-weight: 700;
   margin-bottom: 25px;
+  text-transform: uppercase;
 }
 @media (min-width: 768px) {
   .modal-error__title {
