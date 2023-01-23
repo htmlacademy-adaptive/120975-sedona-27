@@ -1,14 +1,14 @@
 .review {
   padding-top: 37px;
-  padding-bottom: 25px;
+  padding-bottom: 19px;
 
   @media (min-width: @tablet-width) {
     padding-top: 66px;
-    padding-bottom: 67px;
+    padding-bottom: 64px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 115px;
+    padding-top: 110px;
   }
 }
 
@@ -25,18 +25,34 @@
 }
 
 .review__title {
-  font-size: 21px;
-  line-height: 26px;
+  font-size: 18px;
+  line-height: 21px;
 
   margin-top: 0;
   margin-bottom: 32px;
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
+
+    margin-bottom: 25px;
+  }
+
+  &--catalog {
+    @media (min-width: @tablet-width) {
+      margin-bottom: 38px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 35px;
   }
 }
 
 .review__text {
   margin-top: 0;
   margin-bottom: 5px;
+
+  &--catalog {
+    margin-bottom: 15px;
+  }
 }
